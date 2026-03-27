@@ -11,22 +11,22 @@ calories=np.array([[220,250,300],[180, 220, 260],[210,240,280]])
 print('Calories matrix:')
 print(calories)
 
-flat_data=calories.flatten
+flat_data=calories.flatten #this function flattens the data
 print("Flattened data:")
 print(flat_data)
 
 print("Transpose of matrix:")
-print(calories.T)
+print(calories.T) #this function returns the transpose of the matrix
 
-total_calorie=calories.sum(axis=1)
+total_calorie=calories.sum(axis=1) #calculates the sum of the elements columnwise
 print('Total calories burned per trainee:')
 print(total_calorie)
 
-average=calories.mean()
+average=calories.mean() #calculates the mean of the entire matrix
 print("Average calories burned:")
 print(average)
 
 intensity=np.array([1.0,1.1,1.2])
-weight=calories.dot(intensity)
+weight=calories.dot(intensity) #performs dot operation
 print("Weightened performance:")
 print(weight)
